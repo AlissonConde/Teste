@@ -1,1 +1,18 @@
+Livros = ['Logica de programação ', 'Algoritmo de programação ', 'Educação ambiental ', 'Engenharia de software ']
+print('Bem vindo ao sistema de avaliação dos livros')
+print('Por favor, avalie nossos livros de 1 a 5 ou digite zero para sair')
+print('Vamos comecar!!')
 
+for Livro in Livros:
+  while True:
+    classificação = input(f'Qual sua classificação para {Livro}')
+    if classificação == '0':
+      print('Classificação interrompida')
+      break
+    classificação = int(classificação)
+    if classificação < 1 or classificação > 5:
+      print('Classificação invalida')
+    else:
+      print(f'{Livro} com {classificação} estrelas.\n')
+      break
+print('Obrigado, volte sempre')
