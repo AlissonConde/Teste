@@ -1,0 +1,58 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyObdOL1I7YgZnbzSMoQF0uv",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AlissonConde/Teste/blob/main/Script%20para%20avaliar%20livros\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Livros = ['Logica de programação ', 'Algoritmo de programação ', 'Educação ambiental ', 'Engenharia de software ']\n",
+        "print('Bem vindo ao sistema de avaliação dos livros')\n",
+        "print('Por favor, avalie nossos livros de 1 a 5 ou digite zero para sair')\n",
+        "print('Vamos comecar!!')\n",
+        "\n",
+        "for Livro in Livros:\n",
+        "  while True:\n",
+        "    classificação = input(f'Qual sua classificação para {Livro}')\n",
+        "    if classificação == '0':\n",
+        "      print('Classificação interrompida')\n",
+        "      break\n",
+        "    classificação = int(classificação)\n",
+        "    if classificação < 1 or classificação > 5:\n",
+        "      print('Classificação invalida')\n",
+        "    else:\n",
+        "      print(f'{Livro} com {classificação} estrelas.\\n')\n",
+        "      break\n",
+        "print('Obrigado, volte sempre')"
+      ],
+      "metadata": {
+        "id": "rqxH9HhvSzpD"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
